@@ -1,0 +1,116 @@
+/* Container for the cart */
+.cart-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart heading */
+.cart-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Each cart item */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Cart item image */
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+/* Cart item details (name, price) */
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-details p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.cart-item-details .item-price {
+  color: #4caf50;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Remove button */
+.cart-item button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #c0392b;
+}
+
+/* Cart summary section */
+.cart-summary {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.cart-summary p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.cart-summary .total-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.cart-summary button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.cart-summary button:hover {
+  background-color: #2ecc71;
+}
