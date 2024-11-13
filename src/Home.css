@@ -1,0 +1,238 @@
+/* Home Container */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* Parallax effect */
+  position: relative;
+  background-color: white;
+}
+
+/* Add overlay for opacity effect */
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with opacity */
+  z-index: 0;  /* Behind the content */
+}
+
+/* Set z-index for content to make it appear above the overlay */
+.home-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: rgba(51, 51, 51, 0.8); /* Transparent background */
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar links */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #575757;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Header Section */
+.home-header {
+  background-color: rgba(248, 249, 250, 0.8); /* Slightly transparent background */
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Menu Button */
+.menu-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #0056b3;
+}
+
+/* Hidden Menu */
+.hidden-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hidden-menu li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.hidden-menu li:last-child {
+  border-bottom: none;
+}
+
+.hidden-menu a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+}
+
+.hidden-menu a:hover {
+  color: #0056b3;
+}
+
+/* Gift Categories Section */
+.gift-categories {
+  margin-bottom: 50px;
+}
+
+.gift-categories h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.category {
+  flex: 1 1 220px;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent background */
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.category:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.category:hover h3 {
+  color: white;
+}
+
+/* Featured Products Section */
+.featured-products {
+  margin-top: 50px;
+}
+
+.featured-products h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  flex: 1 1 250px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #555;
+  margin: 10px 0;
+}
+
+.product button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product:hover img {
+  transform: scale(1.05);
+}
